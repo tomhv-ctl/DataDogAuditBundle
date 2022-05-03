@@ -525,6 +525,9 @@ class AuditSubscriber implements EventSubscriber
         return $token->getRoles();
     }
 
+    /**
+     * @return array
+     */
     public function getSubscribedEvents()
     {
         return [Events::onFlush];
